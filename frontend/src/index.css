@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Defining our brand colors */
+  --color-primary: #2563eb;
+  --color-secondary: #10b981;
+  --color-dark: #0f172a;
+  --color-light: #f8fafc;
+
+  /* Defining our default font */
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Base body styles */
+body {
+  @apply bg-light text-slate-800 antialiased;
+}

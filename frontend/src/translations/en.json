@@ -1,0 +1,30 @@
+{
+    "common": {
+        "welcome": "Good to see you",
+        "subtitle": "How are you feeling today?",
+        "logout": "Logout",
+        "back": "Back to Dashboard"
+    },
+    "dashboard": {
+        "startTest": "Memory Recall",
+        "startTestDesc": "Memorize 7 words and recall them accurately.",
+        "mathTest": "Attention & Logic",
+        "mathTestDesc": "Quick mental arithmetic to test focus and processing.",
+        "fluencyTest": "Language Fluency",
+        "fluencyTestDesc": "Assess verbal retrieval and categorical thinking.",
+        "viewHistory": "View History",
+        "viewHistoryDesc": "Track your progress over time",
+        "profile": "Profile Settings",
+        "profileDesc": "Update your language and info"
+    },
+    "test": {
+        "title": "Memory Recall Test",
+        "start": "Start Test",
+        "memorize": "Memorize these words",
+        "recall": "Recall Phase",
+        "submit": "Submit Answers",
+        "saving": "Saving Score...",
+        "complete": "Test Complete!",
+        "scoreLabel": "Your cognitive memory score"
+    }
+}
