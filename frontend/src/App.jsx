@@ -14,6 +14,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import SignUp from './pages/SignUp';
 import MathTest from './pages/tests/MathTest';
 import MMSETest from './pages/tests/MMSETest';
+import MOCATestSimple from './pages/tests/MOCATestSimple';
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
@@ -59,6 +60,12 @@ function App() {
         <Route path="/test/mmse" element={
           <ProtectedRoute>
             <MMSETest />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/test/moca" element={
+          <ProtectedRoute>
+            <MOCATestSimple />
           </ProtectedRoute>
         } />
 

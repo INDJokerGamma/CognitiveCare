@@ -93,6 +93,16 @@ const Dashboard = () => {
                         />
                     </Link>
 
+                    <Link to="/test/moca">
+                        <DashboardCard
+                            icon={<Zap className="text-amber-500" />}
+                            title={t('dashboard.mocaTest')}
+                            desc={t('dashboard.mocaTestDesc')}
+                            color="bg-amber-50"
+                            hoverBorder="hover:border-amber-500/50"
+                        />
+                    </Link>
+
                     <Link to="/test/fluency">
                         <DashboardCard
                             icon={<Activity className="text-secondary" />}
