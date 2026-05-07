@@ -2,14 +2,14 @@
 const express = require('express');
 const cors = require('cors');
 const admin = require('firebase-admin');
-const helmet = require('helmet'); // Adds security headers
-const rateLimit = require('express-rate-limit'); // Limits requests
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
 const app = express();
 
 // --- SECURITY MIDDLEWARE ---
-app.use(helmet()); // Protects against common web vulnerabilities
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
@@ -22,11 +22,21 @@ const limiter = rateLimit({
 app.use('/api/', limiter);
 
 // --- FIREBASE INITIALIZATION ---
-const serviceAccount = require('./serviceAccountKey.json');
+// Corrected: Now uses environment variables instead of a physical JSON file
 if (!admin.apps.length) {
-    admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount)
-    });
+    try {
+        admin.initializeApp({
+            credential: admin.credential.cert({
+                projectId: "alzheimers-platform", // From your JSON
+                clientEmail: "firebase-adminsdk-fbsvc@alzheimers-platform.iam.gserviceaccount.com", // From your JSON
+                // Fixes the "Invalid PEM formatted message" error by correctly parsing newlines
+                privateKey: process.env.key.replace(/\\n/g, '\n'),
+            })
+        });
+        console.log(`🔥 Firebase Admin SDK Initialized Successfully`);
+    } catch (error) {
+        console.error("❌ Firebase Initialization Error:", error.message);
+    }
 }
 
 const db = admin.firestore();
@@ -48,5 +58,4 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`🚀 Secure Server running on port ${PORT}`);
-    console.log(`🔥 Firebase Admin SDK Initialized`);
 });
