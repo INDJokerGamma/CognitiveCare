@@ -10,6 +10,8 @@
         "startTestDesc": "Memorize 7 words and recall them accurately.",
         "mathTest": "Attention & Logic",
         "mathTestDesc": "Quick mental arithmetic to test focus and processing.",
+        "mmseTest": "MMSE Screening",
+        "mmseTestDesc": "A 30-point cognitive screening across orientation, memory, and language.",
         "fluencyTest": "Language Fluency",
         "fluencyTestDesc": "Assess verbal retrieval and categorical thinking.",
         "viewHistory": "View History",

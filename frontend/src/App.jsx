@@ -13,6 +13,7 @@ import History from './pages/History';
 import AdminDashboard from './pages/AdminDashboard';
 import SignUp from './pages/SignUp';
 import MathTest from './pages/tests/MathTest';
+import MMSETest from './pages/tests/MMSETest';
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
@@ -52,6 +53,12 @@ function App() {
         <Route path="/test/math" element={
           <ProtectedRoute>
             <MathTest />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/test/mmse" element={
+          <ProtectedRoute>
+            <MMSETest />
           </ProtectedRoute>
         } />
 

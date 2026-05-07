@@ -6,6 +6,12 @@
         "back": "डॅशबोर्डवर परत जा"
     },
     "dashboard": {
+        "mathTest": "Attention & Logic",
+        "mathTestDesc": "Quick mental arithmetic to test focus and processing.",
+        "mmseTest": "MMSE Screening",
+        "mmseTestDesc": "A 30-point cognitive screening across orientation, memory, and language.",
+        "fluencyTest": "Language Fluency",
+        "fluencyTestDesc": "Assess verbal retrieval and categorical thinking.",
         "startTest": "नवीन चाचणी सुरू करा",
         "startTestDesc": "तुमच्या स्मरणशक्तीची चाचणी घ्या",
         "viewHistory": "इतिहास पहा",

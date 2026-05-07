@@ -83,6 +83,16 @@ const Dashboard = () => {
                         />
                     </Link>
 
+                    <Link to="/test/mmse">
+                        <DashboardCard
+                            icon={<Zap className="text-amber-500" />}
+                            title={t('dashboard.mmseTest')}
+                            desc={t('dashboard.mmseTestDesc')}
+                            color="bg-amber-50"
+                            hoverBorder="hover:border-amber-500/50"
+                        />
+                    </Link>
+
                     <Link to="/test/fluency">
                         <DashboardCard
                             icon={<Activity className="text-secondary" />}
