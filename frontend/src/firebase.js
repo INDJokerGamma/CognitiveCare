@@ -6,13 +6,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCZlrMwaEPOL8-K8CEQn16f4tkFTz792BE",
-    authDomain: "alzheimers-platform.firebaseapp.com",
-    projectId: "alzheimers-platform",
-    storageBucket: "alzheimers-platform.firebasestorage.app",
-    messagingSenderId: "292471233716",
-    appId: "1:292471233716:web:6982d0ce4f2e847a300be1"
-};
+    apiKey: "AIzaSyCT01oN9cJQQPX_c6RczwYfqd3ztKg2xvg",
+    authDomain: "alzimer-115e1.firebaseapp.com",
+    projectId: "alzimer-115e1",
+    storageBucket: "alzimer-115e1.firebasestorage.app",
+    messagingSenderId: "747878501291",
+    appId: "1:747878501291:web:8de5f82c3135bff553e0ee"
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
