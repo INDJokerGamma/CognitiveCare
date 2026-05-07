@@ -98,11 +98,11 @@ const Landing = () => {
                         className="relative"
                     >
                         <div className="absolute -inset-4 bg-primary/10 rounded-full blur-3xl" />
-                        <img
+                        {/* <img
                             src="https://img.freepik.com/free-vector/human-brain-structure-concept_23-2148754361.jpg"
                             alt="Cognitive Assessment"
                             className="relative rounded-3xl shadow-2xl"
-                        />
+                        /> */}
                     </motion.div>
                 </div>
             </header>
